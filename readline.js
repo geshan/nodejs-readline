@@ -10,14 +10,14 @@ const signal = ac.signal;
   try {
     const answer = await rl.question('What is 4x4 equals? ', { signal });
 
-    const correctOrNot = answer === '16' ? 'correct!' : 'incorrect. Try again.';
-    console.log(`${answer} is ${correctOrNot}`);
+    const correctOrNot = answer.trim() === '16' ? 'correct!' : 'incorrect. Try again.';
+    console.log(`${answer.trim()} is ${correctOrNot}`);
   } catch(err) {
     let message = 'Error: ';
     if(err.code === 'ABORT_ERR') {
       message = `You took too long. Try again within ${timeoutInSeconds} seconds.`;
     }
-    
+
     console.log(message, err.code !== 'ABORT_ERR' ? err : '');
   } finally {
     rl.close();
