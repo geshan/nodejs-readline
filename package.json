@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-readline",
+  "version": "1.0.0",
+  "description": "Code for nodejs readline module with ESM, Node 17 and async await.",
+  "main": "readline-basic.js",
+  "scripts": {
+    "start": "node readline-basic.js",
+    "start:mjs": "node readline-basic.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geshan/nodejs-readline.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geshan/nodejs-readline/issues"
+  },
+  "homepage": "https://github.com/geshan/nodejs-readline#readme"
+}
