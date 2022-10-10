@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/geshan/nodejs-readline/issues"
   },
-  "homepage": "https://github.com/geshan/nodejs-readline#readme"
+  "homepage": "https://github.com/geshan/nodejs-readline#readme",
+  "dependencies": {
+    "chalk": "^5.1.0"
+  }
 }
